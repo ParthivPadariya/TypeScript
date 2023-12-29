@@ -34,3 +34,16 @@ const user2 : objType = {
     age:20
 }
 console.log(user2.name);    
+
+
+// Bad 
+let x : string | number | undefined = 10;
+let y : string | number | undefined = 10;
+let z : string | number | undefined = undefined;
+
+// Good
+type varType = string | number | undefined;
+
+let p : varType = 20
+let q : varType = "30"
+let r : varType = undefined
